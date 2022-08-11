@@ -44,7 +44,7 @@ btnIniciarGame.addEventListener("click", function(){
     removerInvisivel(menuTabuleiro);
     desenhaTraco(palavra);
     paginaAtual = menuTabuleiro;
-    let letras = document.querySelectorAll("li").focus();
+    let letras = document.querySelectorAll("li");
    
     document.addEventListener("keydown", function(event,keyCode){
         let codigo = event.keyCode;
@@ -295,6 +295,7 @@ function checkChar(e) {
 function verificaLetraCorretaErrada(letra,palavra,letras,letrasCorretas,letrasErradas){
     if(palavra.includes(letra)){
         letrasCorretas.push(letra);
+        focus()
     } else {
         letrasErradas.push(letra);
         desenhaForca();
