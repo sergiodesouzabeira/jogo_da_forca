@@ -258,8 +258,34 @@ canvas {
 .logo {
     display: none;
 } 
+
 body{
     width: 100%;
+}
+
+#iniciar:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    background-color: #052041;
+}
+#adicionarpalavra:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    background-color: #052041;
+    color: white;
+}
+
+#salvar:hover, #novoJogo:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    background-color: #052041;
+}
+
+#cancelar:hover, #desistir:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    background-color: #052041;
+    color: white;
 }
 
 .texto{
