@@ -142,7 +142,7 @@ novoJogo.addEventListener("click", function(){
     ul.innerHTML="";
     sorteia();
     desenhaTraco(palavra);
-    let letras = document.querySelectorAll("li");
+    let letras = document.querySelectorAll("li").focus() ;
     document.addEventListener("keydown", function(event,keyCode){
         let codigo = event.keyCode;
         if(validaLetra(codigo)){
@@ -295,7 +295,6 @@ function checkChar(e) {
 function verificaLetraCorretaErrada(letra,palavra,letras,letrasCorretas,letrasErradas){
     if(palavra.includes(letra)){
         letrasCorretas.push(letra);
-        focus()
     } else {
         letrasErradas.push(letra);
         desenhaForca();
