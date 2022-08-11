@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+    <title>Jogo da Forca</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <a href="https://www.alura.com.br" class="logo" target="_blank"><img src="./img/logo.png"
+                    alt="Logo da Alura"></a>
+            <div class="titulo">Jogo da Forca</div>
+        </h1>
+    </header>
+    <main>
+
+        <section id="menu-principal">
+            <div class="botoes">
+                <button id="iniciar">
+                    Começar a jogar
+                </button>
+                <button id="adicionarpalavra">
+                    Adicionar nova palavra
+                </button>
+            </div>
+        </section>
+
+        <section id="adicionar-palavra" class="invisivel">
+            <textarea name="entrada-texto" id="entrada-texto" placeholder="Digite uma palavra" maxlength="8"></textarea>
+            <p>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/box-important--v1.png" class="icon1" />Máx. de 8
+                letras
+            </p>
+            <div class="botoes-adicionar">
+                <button id="salvar">
+                    Salvar Palavra
+                </button>
+                <button id="cancelar">
+                    cancelar
+                </button>
+            </div>
+        </section>
+
+        <section id="tabuleiro" class="invisivel">
+            <div class="quadro">
+                <canvas width="350" height="400"></canvas>
+            </div>
+
+            <ul id="lista">
+
+            </ul>
+            <div id="div-letras" class="div-letras">
+                
+            </div>
+            <div class="botoes-adicionar">
+                <button id="novoJogo">
+                    Novo jogo
+                </button>
+                <button id="desistir">
+                    Desistir
+                </button>
+            </div>
+            <div class="letrasErradas">
+                <h2>Letras Erradas:</h2>
+            </div>
+            <input type="text" class="texto" autofocus>
+        </section>
+    </main>
+   
+    <script src="script.js"></script>
+    <script src="forca.js"></script>
+</body>
+
+</html>
