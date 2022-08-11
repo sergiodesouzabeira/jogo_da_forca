@@ -44,7 +44,7 @@ btnIniciarGame.addEventListener("click", function(){
     removerInvisivel(menuTabuleiro);
     desenhaTraco(palavra);
     paginaAtual = menuTabuleiro;
-    let letras = document.querySelectorAll("li");
+    let letras = document.querySelectorAll("li").focus();
    
     document.addEventListener("keydown", function(event,keyCode){
         let codigo = event.keyCode;
