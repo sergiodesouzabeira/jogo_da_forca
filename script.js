@@ -142,7 +142,7 @@ novoJogo.addEventListener("click", function(){
     ul.innerHTML="";
     sorteia();
     desenhaTraco(palavra);
-    let letras = document.querySelectorAll("li").focus() ;
+    let letras = document.querySelectorAll("li");
     document.addEventListener("keydown", function(event,keyCode){
         let codigo = event.keyCode;
         if(validaLetra(codigo)){
