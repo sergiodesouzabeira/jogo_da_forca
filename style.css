@@ -297,6 +297,12 @@ body{
 }
 .div-letras {
     display: block;
+    font-size: 30px;
+}
+.btn-letras {
+    width:30px;
+    height:20px;
+    font-size: 15px;
 }
 #tabuleiro li{
     display: inline;
