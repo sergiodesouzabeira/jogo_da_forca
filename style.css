@@ -215,7 +215,6 @@ canvas {
 }
 .div-letras {
     display: none;
-    
 }
 .icones {
     display: flex;
@@ -256,7 +255,7 @@ canvas {
 
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 600px){
 
 .logo {
     display: none;
@@ -296,8 +295,8 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.div-letras:active {
-    display: inline;
+.div-letras {
+    display: block;
 }
 #tabuleiro li{
     display: inline;
