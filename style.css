@@ -213,7 +213,10 @@ canvas {
 .invisivel {
     display: none;
 }
-
+.div-letras {
+    display: none;
+    
+}
 .icones {
     display: flex;
     flex-direction: row;
@@ -253,7 +256,7 @@ canvas {
 
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 600px){
 
 .logo {
     display: none;
@@ -292,6 +295,9 @@ body{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+.div-letras {
+    display: inline;
 }
 #tabuleiro li{
     display: inline;
